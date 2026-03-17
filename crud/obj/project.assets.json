@@ -602,11 +602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj",
+      "projectUniqueName": "C:\\Users\\Arnold\\C#\\crud\\crud\\crud.csproj",
       "projectName": "crud",
-      "projectPath": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj",
+      "projectPath": "C:\\Users\\Arnold\\C#\\crud\\crud\\crud.csproj",
       "packagesPath": "C:\\Users\\Randzon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\obj\\",
+      "outputPath": "C:\\Users\\Arnold\\C#\\crud\\crud\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
