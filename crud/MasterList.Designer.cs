@@ -110,6 +110,7 @@
             // 
             cmbSection.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbSection.FormattingEnabled = true;
+            cmbSection.Items.AddRange(new object[] { "1-A", "1-B", "1-C", "1-D", "1-E", "1-F", "1-G", "1-H" });
             cmbSection.Location = new Point(808, 377);
             cmbSection.Margin = new Padding(3, 4, 3, 4);
             cmbSection.Name = "cmbSection";
@@ -130,6 +131,7 @@
             // 
             cmbCourse.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbCourse.FormattingEnabled = true;
+            cmbCourse.Items.AddRange(new object[] { "ACT", "BSOA", "BSBA", "HM" });
             cmbCourse.Location = new Point(809, 325);
             cmbCourse.Margin = new Padding(3, 4, 3, 4);
             cmbCourse.Name = "cmbCourse";

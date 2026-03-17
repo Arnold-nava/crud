@@ -22,7 +22,6 @@ namespace crud
 
         private void MasterList_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -92,7 +91,7 @@ namespace crud
                 }
 
 
-
+                
             }
             catch
             {
