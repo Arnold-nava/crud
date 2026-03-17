@@ -52,7 +52,7 @@ namespace crud
             }
 
 
-                DBConnect db = new DBConnect();
+            DBConnect db = new DBConnect();
 
             try
             {
@@ -76,9 +76,19 @@ namespace crud
                 cmd.Parameters.AddWithValue("@age", age);
 
                 
-               cmd.ExecuteNonQuery();
+               int count = cmd.ExecuteNonQuery();
 
-               
+                if (count == 0)
+                {
+                    MessageBox.Show($"Student with ID #{id} doesn't exist", "Error!");
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show($"Student information Successfully updated", "Succes!");
+                }
+
+
 
             }
             catch
