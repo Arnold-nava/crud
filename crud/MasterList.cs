@@ -33,10 +33,26 @@ namespace crud
             string course = cmbCourse.Text;
             string section = cmbSection.Text;
 
-            int age = int.Parse(txtAge.Text.Trim());
+            string age = txtAge.Text.Trim();
+
+            if (id == "" || firstname == "" || lastname == "" || course == "" || section == "" || age == "")
+            {
+
+                MessageBox.Show("Please Insert the Missing Data to continue!", "Error!");
+            }
+            if(!int.TryParse(age, out int numAge))
+            {
+                MessageBox.Show("Age must be a number!", "Error!");
+                return;
+            }
+            else if (numAge <= 0)
+            {
+                MessageBox.Show("Age must be greater than 0!", "Error!");
+                return;
+            }
 
 
-            DBConnect db = new DBConnect();
+                DBConnect db = new DBConnect();
 
             try
             {
@@ -59,16 +75,7 @@ namespace crud
                 cmd.Parameters.AddWithValue("@section", section);
                 cmd.Parameters.AddWithValue("@age", age);
 
-                if (id == "" || firstname == "" || lastname == "" || course == "" || section == "")
-                {
-
-                    MessageBox.Show("Please Insert the Missing Data to continue!", "Error!");
-                }
-                else
-                {
-                    MessageBox.Show("Successfully updated student information!", "Success!");
-                }
-
+                
                cmd.ExecuteNonQuery();
 
                
