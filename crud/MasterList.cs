@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,26 +27,28 @@ namespace crud
         {
 
             string id = txtId.Text;
-            string firstname = txtFirstName.Text;
-            string lastname = txtLastName.Text;
+            string firstname = txtFirstName.Text.Trim();
+            string lastname = txtLastName.Text.Trim();
 
             string course = cmbCourse.Text;
             string section = cmbSection.Text;
 
-            string age = txtAge.Text;
+            int age = int.Parse(txtAge.Text.Trim());
 
 
             DBConnect db = new DBConnect();
+
             try
             {
                 db.Open();
 
-                string query = "UPDATE student_list SET firstname=@firstname" +
-                    "lastname=@lastname" +
-                    "course=@course" +
-                    "section=@section" +
-                    "age=@age" +
-                "WHERE id=@id";
+                string query = "UPDATE student_list SET " +
+                        "firstname=@firstname, " +
+                        "lastname=@lastname, " +
+                        "course=@course, " +
+                        "section=@section, " +
+                        "age=@age " +
+                        "WHERE id=@id";
                 MySql.Data.MySqlClient.MySqlCommand cmd =
                    new MySql.Data.MySqlClient.MySqlCommand(query, db.Connection);
 
@@ -56,27 +59,14 @@ namespace crud
                 cmd.Parameters.AddWithValue("@section", section);
                 cmd.Parameters.AddWithValue("@age", age);
 
-                if (id == "" || firstname == "" || lastname == "" || course == "" || section == "" || age == "")
+                if (id == "" || firstname == "" || lastname == "" || course == "" || section == "")
                 {
 
                     MessageBox.Show("Please Insert the Missing Data to continue!", "Error!");
-
-                    if (age == "0")
-                    {
-                        MessageBox.Show("Age can't be 0!", "Error!");
-
- 
-                        if (id.Length == 0)
-                        {
-                            MessageBox.Show($"Student with id number {id}", "Error!");
-                            return;
-                        }
-                    }
                 }
                 else
                 {
                     MessageBox.Show("Successfully updated student information!", "Success!");
-                    return;
                 }
 
                cmd.ExecuteNonQuery();

@@ -46,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(245, 36);
+            label1.Location = new Point(230, 41);
             label1.Name = "label1";
             label1.Size = new Size(314, 30);
             label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(144, 87);
+            label2.Location = new Point(102, 106);
             label2.Name = "label2";
             label2.Size = new Size(131, 30);
             label2.TabIndex = 0;
@@ -66,16 +66,17 @@
             // 
             txtFirstName.BorderStyle = BorderStyle.FixedSingle;
             txtFirstName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtFirstName.Location = new Point(281, 87);
+            txtFirstName.Location = new Point(258, 106);
+            txtFirstName.Margin = new Padding(3, 4, 3, 4);
             txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(364, 33);
+            txtFirstName.Size = new Size(330, 33);
             txtFirstName.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(144, 124);
+            label3.Location = new Point(103, 145);
             label3.Name = "label3";
             label3.Size = new Size(128, 30);
             label3.TabIndex = 0;
@@ -85,25 +86,28 @@
             // 
             cmbCourse.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbCourse.FormattingEnabled = true;
-            cmbCourse.Location = new Point(282, 165);
+            cmbCourse.Items.AddRange(new object[] { "ACT", "BSOA", "BSBA", "HM" });
+            cmbCourse.Location = new Point(258, 192);
+            cmbCourse.Margin = new Padding(3, 4, 3, 4);
             cmbCourse.Name = "cmbCourse";
-            cmbCourse.Size = new Size(363, 33);
+            cmbCourse.Size = new Size(328, 33);
             cmbCourse.TabIndex = 2;
             // 
             // txtLastName
             // 
             txtLastName.BorderStyle = BorderStyle.FixedSingle;
             txtLastName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtLastName.Location = new Point(281, 126);
+            txtLastName.Location = new Point(259, 148);
+            txtLastName.Margin = new Padding(3, 4, 3, 4);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(364, 33);
+            txtLastName.Size = new Size(330, 33);
             txtLastName.TabIndex = 1;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(182, 168);
+            label4.Location = new Point(147, 195);
             label4.Name = "label4";
             label4.Size = new Size(90, 30);
             label4.TabIndex = 0;
@@ -113,7 +117,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(177, 207);
+            label5.Location = new Point(143, 236);
             label5.Name = "label5";
             label5.Size = new Size(95, 30);
             label5.TabIndex = 0;
@@ -123,9 +127,11 @@
             // 
             cmbSection.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbSection.FormattingEnabled = true;
-            cmbSection.Location = new Point(281, 204);
+            cmbSection.Items.AddRange(new object[] { "1-A", "1-B", "1-C", "1-D", "1-E", "1-F", "1-G", "1-H" });
+            cmbSection.Location = new Point(259, 233);
+            cmbSection.Margin = new Padding(3, 4, 3, 4);
             cmbSection.Name = "cmbSection";
-            cmbSection.Size = new Size(363, 33);
+            cmbSection.Size = new Size(328, 33);
             cmbSection.TabIndex = 2;
             cmbSection.SelectedIndexChanged += cmbSectoin_SelectedIndexChanged;
             // 
@@ -133,16 +139,17 @@
             // 
             txtAge.BorderStyle = BorderStyle.FixedSingle;
             txtAge.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAge.Location = new Point(280, 243);
+            txtAge.Location = new Point(258, 273);
+            txtAge.Margin = new Padding(3, 4, 3, 4);
             txtAge.Name = "txtAge";
-            txtAge.Size = new Size(364, 33);
+            txtAge.Size = new Size(330, 33);
             txtAge.TabIndex = 1;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(212, 246);
+            label6.Location = new Point(180, 277);
             label6.Name = "label6";
             label6.Size = new Size(60, 30);
             label6.TabIndex = 0;
@@ -151,9 +158,10 @@
             // btnSave
             // 
             btnSave.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSave.Location = new Point(281, 282);
+            btnSave.Location = new Point(258, 314);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(364, 47);
+            btnSave.Size = new Size(330, 63);
             btnSave.TabIndex = 3;
             btnSave.Text = "SAVE RECORD";
             btnSave.UseVisualStyleBackColor = true;
@@ -161,9 +169,9 @@
             // 
             // registration
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(691, 600);
             Controls.Add(btnSave);
             Controls.Add(cmbSection);
             Controls.Add(label5);
@@ -176,6 +184,7 @@
             Controls.Add(txtFirstName);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "registration";
             Text = "registration";
             ResumeLayout(false);

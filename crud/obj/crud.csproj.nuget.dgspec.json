@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CL3-PC28\\Desktop\\crud_nava\\crud-main\\crud\\crud.csproj": {}
+    "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CL3-PC28\\Desktop\\crud_nava\\crud-main\\crud\\crud.csproj": {
+    "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CL3-PC28\\Desktop\\crud_nava\\crud-main\\crud\\crud.csproj",
+        "projectUniqueName": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj",
         "projectName": "crud",
-        "projectPath": "C:\\Users\\CL3-PC28\\Desktop\\crud_nava\\crud-main\\crud\\crud.csproj",
-        "packagesPath": "C:\\Users\\CL3-PC28\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CL3-PC28\\Desktop\\crud_nava\\crud-main\\crud\\obj\\",
+        "projectPath": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\crud.csproj",
+        "packagesPath": "C:\\Users\\Randzon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Arnold\\C#\\source\\repos\\Arnold-nava\\crud\\crud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CL3-PC28\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Randzon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
